@@ -7,8 +7,6 @@
     <div style="margin: 5px;">
         <p>🛠️ Owned By Kisah Tanah Air RP</p>
         <p>⚡ Contributions From The Community</p>
-        <p>🔧 Easy Configuration</p>
-        <p>📊 Server Statistics</p>
-        <p>🎨 Modern UI/UX Design</p>
+        <p>🔧 Initiation : Wandi, Skiddle, Argie, XOVR And Many From Community</p>
     </div>
 </div>
