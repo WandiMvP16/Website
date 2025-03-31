@@ -1,0 +1,522 @@
+{
+  "tr": {
+    "nav": {
+      "home": "ANA SAYFA",
+      "news": "HABERLER",
+      "vehicles": "ARAÇLAR",
+      "store": "MAĞAZA",
+      "support": "DESTEK",
+      "overview": "GENEL BAKIŞ",
+      "servers": "SUNUCULAR",
+      "community": "TOPLULUK",
+      "wiki": "WİKİ"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Türkiye'nin en iyi Minecraft sunucusuna hoş geldiniz!",
+      "start_button": "HEMEN BAŞLA",
+      "discord_button": "DISCORD"
+    },
+    "stats": {
+      "active_players": "Aktif Oyuncu",
+      "vehicles": "Özel Araç",
+      "jobs": "Meslek"
+    },
+    "features": {
+      "vehicles": {
+        "title": "ÖZEL ARAÇLAR",
+        "description": "200+ Özel Modifiye Seçeneği"
+      },
+      "jobs": {
+        "title": "MESLEKLER",
+        "description": "20+ Detaylı Meslek"
+      },
+      "economy": {
+        "title": "EKONOMİ",
+        "description": "Gelişmiş Ekonomi Sistemi"
+      },
+      "survival": {
+        "title": "Survival",
+        "description": "Zorlu hayatta kalma deneyimi ve benzersiz ekonomi sistemi!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Kendi adanı oluştur ve geliştir!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Klanını kur ve savaş!"
+      }
+    },
+    "news": {
+      "title": "Haberler",
+      "more": "Tümünü Gör"
+    },
+    "vehicles_page": {
+      "title": "ARAÇLAR",
+      "buy_button": "Satın Al",
+      "cars": [
+        {
+          "name": "BMW M5 CS",
+          "price": "₺2,500,000",
+          "description": "640 Beygir, 0-100: 3.0s"
+        },
+        {
+          "name": "Mercedes-AMG GT",
+          "price": "₺3,200,000",
+          "description": "585 Beygir, 0-100: 3.2s"
+        },
+        {
+          "name": "Porsche 911 GT3",
+          "price": "₺4,100,000",
+          "description": "510 Beygir, 0-100: 3.4s"
+        },
+        {
+          "name": "Audi RS7",
+          "price": "₺2,800,000",
+          "description": "600 Beygir, 0-100: 3.6s"
+        }
+      ]
+    },
+    "store": {
+      "title": "MAĞAZA",
+      "buy_button": "Satın Al",
+      "packages": [
+        {
+          "name": "VIP Paket",
+          "description": "30 Günlük VIP Üyelik",
+          "features": [
+            "Özel Discord Rolü",
+            "Özel Araç İndirimi",
+            "VIP Sohbet Erişimi",
+            "Öncelikli Destek"
+          ],
+          "price": "₺150"
+        },
+        {
+          "name": "Premium Paket",
+          "description": "30 Günlük Premium Üyelik",
+          "features": [
+            "Tüm VIP Özellikleri",
+            "Özel Kıyafetler",
+            "İsim Değiştirme Hakkı",
+            "Özel Spawn Noktası"
+          ],
+          "price": "₺250"
+        }
+      ]
+    },
+    "support": {
+      "title": "DESTEK",
+      "form": {
+        "title": "Destek Talebi Oluştur",
+        "name": "Adınız",
+        "email": "E-posta Adresiniz",
+        "subject": "Konu",
+        "message": "Mesajınız",
+        "submit": "Gönder"
+      },
+      "faq": {
+        "title": "Sık Sorulan Sorular",
+        "questions": [
+          {
+            "q": "Nasıl oyuna giriş yapabilirim?",
+            "a": "FiveM üzerinden sunucu IP adresimizi girerek oyuna bağlanabilirsiniz."
+          },
+          {
+            "q": "VIP paketleri nasıl aktif olur?",
+            "a": "Satın aldığınız VIP paketleri otomatik olarak hesabınıza tanımlanır."
+          },
+          {
+            "q": "Oyun içi para nasıl kazanabilirim?",
+            "a": "Meslek seçerek, ticaret yaparak veya özel görevleri tamamlayarak para kazanabilirsiniz."
+          }
+        ]
+      }
+    },
+    "footer": {
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "rules": "Kurallar",
+      "privacy": "Gizlilik",
+      "terms": "Kullanım Şartları"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "HOME",
+      "news": "NEWS",
+      "vehicles": "VEHICLES",
+      "store": "STORE",
+      "support": "SUPPORT",
+      "overview": "OVERVIEW",
+      "servers": "SERVERS",
+      "community": "COMMUNITY",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Welcome to Turkey's best Minecraft server!",
+      "start_button": "START NOW",
+      "discord_button": "DISCORD"
+    },
+    "stats": {
+      "active_players": "Active Players",
+      "vehicles": "Vehicles",
+      "jobs": "Jobs"
+    },
+    "features": {
+      "vehicles": {
+        "title": "CUSTOM VEHICLES",
+        "description": "200+ Custom Modification Options"
+      },
+      "jobs": {
+        "title": "JOBS",
+        "description": "20+ Detailed Jobs"
+      },
+      "economy": {
+        "title": "ECONOMY",
+        "description": "Advanced Economy System"
+      },
+      "survival": {
+        "title": "Survival",
+        "description": "Challenging survival experience with unique economy system!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Create and develop your own island!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Build your clan and fight!"
+      }
+    },
+    "news": {
+      "title": "News",
+      "more": "View All"
+    },
+    "vehicles_page": {
+      "title": "VEHICLES",
+      "buy_button": "Buy Now",
+      "cars": [
+        {
+          "name": "BMW M5 CS",
+          "price": "$150,000",
+          "description": "640 HP, 0-60: 3.0s"
+        },
+        {
+          "name": "Mercedes-AMG GT",
+          "price": "$180,000",
+          "description": "585 HP, 0-60: 3.2s"
+        },
+        {
+          "name": "Porsche 911 GT3",
+          "price": "$200,000",
+          "description": "510 HP, 0-60: 3.4s"
+        },
+        {
+          "name": "Audi RS7",
+          "price": "$170,000",
+          "description": "600 HP, 0-60: 3.6s"
+        }
+      ]
+    },
+    "store": {
+      "title": "STORE",
+      "buy_button": "Buy Now",
+      "packages": [
+        {
+          "name": "VIP Package",
+          "description": "30 Days VIP Membership",
+          "features": [
+            "Special Discord Role",
+            "Vehicle Discount",
+            "VIP Chat Access",
+            "Priority Support"
+          ],
+          "price": "$15"
+        },
+        {
+          "name": "Premium Package",
+          "description": "30 Days Premium Membership",
+          "features": [
+            "All VIP Features",
+            "Custom Clothes",
+            "Name Change Right",
+            "Custom Spawn Point"
+          ],
+          "price": "$25"
+        }
+      ]
+    },
+    "support": {
+      "title": "SUPPORT",
+      "form": {
+        "title": "Create Support Ticket",
+        "name": "Your Name",
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Your Message",
+        "submit": "Submit"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "q": "How can I join the game?",
+            "a": "You can connect to the game by entering our server IP address through FiveM."
+          },
+          {
+            "q": "How are VIP packages activated?",
+            "a": "VIP packages you purchase are automatically activated on your account."
+          },
+          {
+            "q": "How can I earn money in-game?",
+            "a": "You can earn money by choosing a job, trading, or completing special missions."
+          }
+        ]
+      }
+    },
+    "footer": {
+      "about": "About",
+      "contact": "Contact",
+      "rules": "Rules",
+      "privacy": "Privacy",
+      "terms": "Terms of Service"
+    }
+  },
+  "de": {
+    "nav": {
+      "overview": "ÜBERSICHT",
+      "servers": "SERVER",
+      "community": "GEMEINSCHAFT",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Willkommen auf dem besten Minecraft-Server der Türkei!",
+      "start_button": "JETZT STARTEN",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Herausforderndes Überlebenserlebnis mit einzigartigem Wirtschaftssystem!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Erstelle und entwickle deine eigene Insel!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Baue deinen Clan auf und kämpfe!"
+      }
+    }
+  },
+  "fr": {
+    "nav": {
+      "overview": "APERÇU",
+      "servers": "SERVEURS",
+      "community": "COMMUNAUTÉ",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Bienvenue sur le meilleur serveur Minecraft de Turquie!",
+      "start_button": "COMMENCER",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Une expérience de survie stimulante avec un système économique unique!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Créez et développez votre propre île!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Construisez votre clan et battez-vous!"
+      }
+    }
+  },
+  "es": {
+    "nav": {
+      "overview": "VISIÓN GENERAL",
+      "servers": "SERVIDORES",
+      "community": "COMUNIDAD",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "¡Bienvenido al mejor servidor de Minecraft de Turquía!",
+      "start_button": "EMPEZAR AHORA",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "¡Experiencia de supervivencia desafiante con sistema económico único!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "¡Crea y desarrolla tu propia isla!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "¡Construye tu clan y lucha!"
+      }
+    }
+  },
+  "it": {
+    "nav": {
+      "overview": "PANORAMICA",
+      "servers": "SERVER",
+      "community": "COMUNITÀ",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Benvenuto nel miglior server Minecraft della Turchia!",
+      "start_button": "INIZIA ORA",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Esperienza di sopravvivenza stimolante con sistema economico unico!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Crea e sviluppa la tua isola!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Costruisci il tuo clan e combatti!"
+      }
+    }
+  },
+  "pt": {
+    "nav": {
+      "overview": "VISÃO GERAL",
+      "servers": "SERVIDORES",
+      "community": "COMUNIDADE",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Bem-vindo ao melhor servidor Minecraft da Turquia!",
+      "start_button": "COMEÇAR AGORA",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Experiência de sobrevivência desafiadora com sistema econômico único!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Crie e desenvolva sua própria ilha!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Construa seu clã e lute!"
+      }
+    }
+  },
+  "ru": {
+    "nav": {
+      "overview": "ОБЗОР",
+      "servers": "СЕРВЕРЫ",
+      "community": "СООБЩЕСТВО",
+      "wiki": "ВИКИ"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Добро пожаловать на лучший сервер Minecraft в Турции!",
+      "start_button": "НАЧАТЬ СЕЙЧАС",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Сложный опыт выживания с уникальной экономической системой!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Создайте и развивайте свой остров!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Создайте свой клан и сражайтесь!"
+      }
+    }
+  },
+  "pl": {
+    "nav": {
+      "overview": "PRZEGLĄD",
+      "servers": "SERWERY",
+      "community": "SPOŁECZNOŚĆ",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Witamy na najlepszym serwerze Minecraft w Turcji!",
+      "start_button": "ROZPOCZNIJ TERAZ",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Wymagające doświadczenie przetrwania z unikalnym systemem ekonomicznym!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Stwórz i rozwijaj swoją wyspę!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Zbuduj swój klan i walcz!"
+      }
+    }
+  },
+  "nl": {
+    "nav": {
+      "overview": "OVERZICHT",
+      "servers": "SERVERS",
+      "community": "GEMEENSCHAP",
+      "wiki": "WIKI"
+    },
+    "hero": {
+      "title": "Brezel",
+      "subtitle": "Minecraft",
+      "description": "Welkom bij de beste Minecraft-server van Turkije!",
+      "start_button": "BEGIN NU",
+      "discord_button": "DISCORD"
+    },
+    "features": {
+      "survival": {
+        "title": "Survival",
+        "description": "Uitdagende survival-ervaring met uniek economisch systeem!"
+      },
+      "skyblock": {
+        "title": "Skyblock",
+        "description": "Maak en ontwikkel je eigen eiland!"
+      },
+      "factions": {
+        "title": "Factions",
+        "description": "Bouw je clan en vecht!"
+      }
+    }
+  }
+} 

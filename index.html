@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITA RP</title>
+    <link rel="icon" type="image/x-icon" href="https://r2.fivemanage.com/MYfZf6samhDbhH0VObPlC/image/logokita.webp">
+    <meta name="description" content="Experience the Ultimate Minecraft Adventure on Brezel"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="background-video">
+    <!-- <video autoplay muted loop playsinline id="bgVideo">
+      <source src="video/background.mp4" type="video/mp4">
+    </video> -->
+    <div class="video-overlay"></div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-bg-animation"></div>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/" class="logo">
+          <img src="https://r2.fivemanage.com/MYfZf6samhDbhH0VObPlC/image/logokita.webp" alt="KITA RP">
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link active">HOME</a></li>
+          <li><a href="servers.html" class="nav-link">SERVERS</a></li>
+          <li><a href="community.html" class="nav-link">COMMUNITY</a></li>
+          <li><a href="wiki.html" class="nav-link">WIKI</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="server-status-mini">
+           <div class="footer-social">
+             <a href="#" class="discord" data-aos="fade-left" data-aos-delay="100"><i class="fab fa-discord"></i></a>
+             <a href="#" class="twitter" data-aos="fade-left" data-aos-delay="200"><i class="fab fa-twitter"></i></a>
+             <a href="#" class="youtube" data-aos="fade-left" data-aos-delay="300"><i class="fab fa-youtube"></i></a>
+             <a href="#" class="tiktok" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-particles"></div>
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="glowing-text">KISAH TANAH AIR ROLEPLAY</h1>
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">Selamat datang di Kisah Tanah Air Roleplay! Jelajahi dunia penuh cerita, komunitas seru, dan pengalaman roleplay khas Indonesia. Bergabunglah sekarang dan tulis kisahmu!.</p>
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://cfx.re/join/rj9l5g" class="primary-btn pulse-btn">
+              <span class="btn-content">
+                <i class="fas fa-play"></i>
+                PLAY NOW
+              </span>
+            </a>
+            <a href="https://discord.gg/kitarp" class="secondary-btn glow-btn">
+              <span class="btn-content">
+                <i class="fab fa-discord"></i>
+                JOIN DISCORD
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <span class="count-up" data-target="1000">0</span>
+            <p>Active Players</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-server"></i>
+            <span class="count-up" data-target="99.9">0</span>
+            <p>Uptime %</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-trophy"></i>
+            <span class="count-up" data-target="50000">0</span>
+            <p>Prize Pool $</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+    <div class="servers-page">
+        <div class="page-header">
+            <div class="header-content">
+                <h1>KISAH TANAH AIR ROLEPLAY</h1>
+                <p>All Systems Operational</p>
+                <div class="server-stats-bar">
+                    <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span id="uptimeDisplay">Uptime: 99%</span>
+                    </div>
+
+                    <div class="stat-item">
+    <i class="fas fa-bolt"></i>
+    <span id="latencyDisplay">Latency: Loading...</span>
+</div>
+
+<script>
+    async function getLatency() {
+        try {
+            const startTime = performance.now();
+            // Mengirim permintaan GET ke server (contoh: Google sebagai tes)
+            await fetch('https://servers-frontend.fivem.net/api/servers/single/rj9l5g');
+            const endTime = performance.now();
+
+            // Menghitung latency dalam milidetik
+            const latency = Math.round(endTime - startTime);
+
+            // Menampilkan latency pada elemen dengan ID latencyDisplay
+            document.getElementById('latencyDisplay').textContent = `Latency: ${latency} ms`;
+        } catch (error) {
+            console.error('Error fetching latency:', error);
+            document.getElementById('latencyDisplay').textContent = 'Latency: Error';
+        }
+    }
+
+    // Memanggil fungsi saat halaman dimuat
+    getLatency();
+
+    // Memperbarui latency setiap 5 detik
+    setInterval(getLatency, 5000);
+</script>
+
+                    <div class="stat-item">
+    <i class="fas fa-users"></i>
+    <span id="playerLoginCount">Players: Loading...</span>
+</div>
+
+<script>
+    async function getPlayerLoginCount() {
+        try {
+            // Mengambil data dari API FiveM
+            const response = await fetch('https://servers-frontend.fivem.net/api/servers/single/rj9l5g');
+            const data = await response.json();
+
+            // Mengambil jumlah pemain online dari data API
+            const playerCount = data.Data.players.length;
+
+            // Menampilkan jumlah pemain pada elemen dengan ID playerLoginCount
+            document.getElementById('playerLoginCount').textContent = `Players: ${playerCount}`;
+        } catch (error) {
+            console.error('Error fetching player login count:', error);
+            document.getElementById('playerLoginCount').textContent = 'Players: Error';
+        }
+    }
+
+    // Memanggil fungsi saat halaman dimuat
+    getPlayerLoginCount();
+
+    // Memperbarui jumlah pemain setiap 5 detik
+    setInterval(getPlayerLoginCount, 5000);
+</script>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="servers-container">
+
+                <div class="servers-grid">
+                    <!-- Roleplay Server -->
+                    <div class="server-card" data-server-name="roleplay">
+                        <div class="server-header">
+                            <div class="header-main">
+                                <h2>KISAH TANAH AIR ROLEPLAY</h2>
+                                <div class="server-badges">
+                                    <span class="server-type">
+                                        <i class="fas fa-theater-masks"></i>
+                                        Roleplay
+                                    </span>
+                                    <span class="player-count">
+                                        <i class="fas fa-users"></i>
+                                        <div class="info" id="playerCount">Player Online: Loading...</div>
+
+    <script>
+        async function fetchPlayerCount() {
+            try {
+                // Mengambil data dari API FiveM
+                const response = await fetch('https://servers-frontend.fivem.net/api/servers/single/rj9l5g');
+                const data = await response.json();
+
+                // Mengambil jumlah player dari data API
+                const playerCount = data.Data.players.length;
+
+                // Menampilkan jumlah player di halaman
+                document.getElementById('playerCount').textContent = 'Player Online: ' + playerCount;
+            } catch (error) {
+                console.error('Error fetching player count:', error);
+                document.getElementById('playerCount').textContent = 'Player Online: Error';
+            }
+        }
+
+        // Panggil fungsi saat halaman dimuat
+        fetchPlayerCount();
+
+        // Update jumlah player setiap 5 detik
+        setInterval(fetchPlayerCount, 5000);
+    </script>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="status-badge">Online</span>
+                        </div>
+                        <div class="server-info">
+                            <div class="server-stats">
+                                <div class="stat-group">
+                                    <div class="stat-item">
+                                        <i class="fas fa-users"></i>
+                                        <span id="playerCountDisplay">Loading...</span>
+                                        <script>
+    async function updatePlayerCount() {
+        try {
+            // Mengambil data dari API FiveM
+            const response = await fetch('https://servers-frontend.fivem.net/api/servers/single/rj9l5g');
+            const data = await response.json();
+
+            // Mengambil jumlah pemain online dan kapasitas maksimal server
+            const playerCount = data.Data.players.length;
+            const maxPlayers = data.Data.sv_maxclients;
+
+            // Menampilkan jumlah pemain pada elemen dengan ID playerCountDisplay
+            document.getElementById('playerCountDisplay').textContent = `${playerCount}/${maxPlayers}`;
+        } catch (error) {
+            console.error('Error fetching player count:', error);
+            document.getElementById('playerCountDisplay').textContent = 'Error';
+        }
+    }
+
+    // Panggil fungsi saat halaman dimuat
+    updatePlayerCount();
+
+    // Update jumlah pemain setiap 5 detik
+    setInterval(updatePlayerCount, 5000);
+</script>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>v1.19.2</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-signal"></i>
+                                        <span>20 TPS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="server-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Ryzen 9 5950X</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-memory"></i>
+                                    <span>64GB DDR4</span>
+                                </div>
+                            </div>
+                            <div class="server-features">
+                                <span>Custom Economy</span>
+                                <span>City System</span>
+                                <span>Professions</span>
+                            </div>
+                        </div>
+                        <div class="server-actions">
+                            <button class="play-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-play"></i>
+                                    <span>PLAY NOW</span>
+                                </div>
+                            </button>
+                            <button class="copy-ip" data-ip="play.brezel.com">
+                                <div class="button-content">
+                                    <i class="fas fa-copy"></i>
+                                    <span>COPY IP</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+    <!-- Table List Player -->
+<div class="container">
+        <h1>Player List</h1>
+<div class="search-sort-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Cari pemain..." onkeyup="searchPlayer()">
+        <select id="sortSelect" class="sort-select" onchange="sortPlayers()">
+            <option value="name">Urutkan Nama</option>
+            <option value="ping">Urutkan Ping</option>
+        </select>
+    </div>
+
+    <div class="playerlist-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Player</th>
+                    <th>Ping</th>
+                </tr>
+            </thead>
+            <tbody id="playerTable">
+                <tr>
+                    <td colspan="3">Loading players...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn" onclick="prevPage()" disabled>&laquo; Sebelumnya</button>
+        <span class="page-info" id="pageInfo">Page 1 of 1</span>
+        <button id="nextBtn" onclick="nextPage()" disabled>Berikutnya &raquo;</button>
+    </div>
+
+    <script>
+        let allPlayers = [];
+        let players = [];
+        let currentPage = 1;
+        const rowsPerPage = 10;
+
+        async function fetchPlayerNames() {
+            try {
+                const response = await fetch('https://servers-frontend.fivem.net/api/servers/single/rj9l5g');
+                const data = await response.json();
+                allPlayers = data.Data.players || [];
+                players = allPlayers;
+                updatePlayerTable();
+            } catch (error) {
+                console.error('Error fetching player names:', error);
+                document.getElementById('playerTable').innerHTML = '<tr><td colspan="3">Error loading player list</td></tr>';
+            }
+        }
+
+        function updatePlayerTable() {
+            const playerTable = document.getElementById('playerTable');
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+            const displayedPlayers = players.slice(start, end);
+
+            playerTable.innerHTML = displayedPlayers.map((player, index) => `
+                <tr>
+                    <td>${start + index + 1}</td>
+                    <td>${player.name}</td>
+                    <td>${player.ping} ms</td>
+                </tr>
+            `).join('');
+
+            if (displayedPlayers.length === 0) {
+                playerTable.innerHTML = '<tr><td colspan="3">Tidak ada pemain ditemukan</td></tr>';
+            }
+
+            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${Math.ceil(players.length / rowsPerPage)}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = end >= players.length;
+        }
+
+        function searchPlayer() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            players = input ? allPlayers.filter(player => player.name.toLowerCase().includes(input)) : allPlayers;
+            currentPage = 1;
+            updatePlayerTable();
+        }
+
+        function sortPlayers() {
+            const sortBy = document.getElementById('sortSelect').value;
+            players.sort((a, b) => sortBy === 'name' ? a.name.localeCompare(b.name) : a.ping - b.ping);
+            updatePlayerTable();
+        }
+
+        function nextPage() {
+            if (currentPage * rowsPerPage < players.length) {
+                currentPage++;
+                updatePlayerTable();
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePlayerTable();
+            }
+        }
+
+        fetchPlayerNames();
+        setInterval(fetchPlayerNames, 30000);
+    </script>
+</div>
+
+       <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left" data-aos="fade-right">
+       <img src="https://r2.fivemanage.com/MYfZf6samhDbhH0VObPlC/image/logokita.webp" alt="KITA RP" class="footer-logo">
+        <p>© 2025 KISAH TANAH AIR RP</p>
+      </div>
+      <div class="footer-social" data-aos="fade-left">
+        <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false
+    });
+
+    // Particles.js konfigürasyonu
+    particlesJS('hero-particles', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#00ff88'
+        },
+        shape: {
+          type: 'circle'
+        },
+        opacity: {
+          value: 0.5,
+          random: true
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#00ff88',
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: true,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+
+    // Sayaç animasyonu
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-target'));
+      const duration = 2000;
+      const step = target / (duration / 16);
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 16);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.count-up');
+          counters.forEach(counter => animateCounter(counter));
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    document.querySelectorAll('.hero-stats').forEach(statsSection => {
+      observer.observe(statsSection);
+    });
+
+    // Header scroll efekti
+    let lastScroll = 0;
+    const header = document.querySelector('.main-header');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll <= 0) {
+        header.classList.remove('scroll-up');
+        return;
+      }
+      
+      if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+        header.classList.remove('scroll-up');
+        header.classList.add('scroll-down');
+      } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+        header.classList.remove('scroll-down');
+        header.classList.add('scroll-up');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - BREZEL MINECRAFT</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta name="description" content="Join the Epic Minecraft Community Events"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Akrobat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo">
+                    <img src="https://r2.fivemanage.com/MYfZf6samhDbhH0VObPlC/image/logokita.webp" alt="KITA RP">
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">OVERVIEW</a></li>
+                    <li><a href="servers.html" class="nav-link">SERVERS</a></li>
+                    <li><a href="community.html" class="nav-link active">COMMUNITY</a></li>
+                    <li><a href="wiki.html" class="nav-link">WIKI</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="server-status-mini">
+                     <div class="footer-social">
+                         <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+                         <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                         <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <div class="community-page">
+        <div class="page-header">
+            <div class="header-content">
+                <h1>COMMUNITY EVENTS</h1>
+                <p>Join epic adventures and win incredible rewards in the Minecraft universe</p>
+                <div class="server-stats-bar">
+                    <div class="stat-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>4 Active Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>$150,000 Prize Pool</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>500+ Participants</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="events-container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search events..." id="eventSearch">
+                    </div>
+                    <div class="event-filters">
+                        <button class="filter-btn active" data-filter="all">
+                            <span>All</span>
+                        </button>
+                        <button class="filter-btn" data-filter="ingame">
+                            <span>In-Game</span>
+                        </button>
+                        <button class="filter-btn" data-filter="community">
+                            <span>Community</span>
+                        </button>
+                        <button class="filter-btn" data-filter="tournament">
+                            <span>Tournament</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="events-grid">
+                    <!-- Grand Battle Tournament -->
+                    <div class="event-card" data-event-type="tournament">
+                        <div class="event-header">
+                            <div class="header-main">
+                                <h2>Grand Battle Tournament</h2>
+                                <div class="event-badges">
+                                    <span class="event-type">
+                                        <i class="fas fa-trophy"></i>
+                                        Tournament
+                                    </span>
+                                    <span class="participant-count">
+                                        <i class="fas fa-users"></i>
+                                        128 Participants
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">MAR</span>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-details">
+                                <p>Epic clan warfare tournament with exclusive rewards for the victorious clan!</p>
+                                <div class="event-meta">
+                                    <div class="meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>20:00</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Unlimited Entry</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-coins"></i>
+                                        <span>$50,000 Prize</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-features">
+                                <span>Clan Wars</span>
+                                <span>PvP Combat</span>
+                                <span>Special Rewards</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="join-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-play"></i>
+                                    <span>JOIN NOW</span>
+                                </div>
+                            </button>
+                            <button class="details-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>DETAILS</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Build Competition -->
+                    <div class="event-card" data-event-type="community">
+                        <div class="event-header">
+                            <div class="header-main">
+                                <h2>Master Builder Challenge</h2>
+                                <div class="event-badges">
+                                    <span class="event-type">
+                                        <i class="fas fa-hammer"></i>
+                                        Community
+                                    </span>
+                                    <span class="participant-count">
+                                        <i class="fas fa-users"></i>
+                                        64 Participants
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="event-date">
+                                <span class="day">1</span>
+                                <span class="month">APR</span>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-details">
+                                <p>Showcase your creativity and win amazing prizes in our building competition!</p>
+                                <div class="event-meta">
+                                    <div class="meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>15:00</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>100 Slots</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-coins"></i>
+                                        <span>$30,000 Prize</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-features">
+                                <span>Creative Mode</span>
+                                <span>Custom Map</span>
+                                <span>Jury Voting</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="join-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-play"></i>
+                                    <span>JOIN NOW</span>
+                                </div>
+                            </button>
+                            <button class="details-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>DETAILS</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Treasure Hunt -->
+                    <div class="event-card" data-event-type="ingame">
+                        <div class="event-header">
+                            <div class="header-main">
+                                <h2>Epic Treasure Hunt</h2>
+                                <div class="event-badges">
+                                    <span class="event-type">
+                                        <i class="fas fa-map"></i>
+                                        In-Game
+                                    </span>
+                                    <span class="participant-count">
+                                        <i class="fas fa-users"></i>
+                                        256 Participants
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="event-date">
+                                <span class="day">30</span>
+                                <span class="month">MAR</span>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-details">
+                                <p>Embark on an epic treasure hunt across our vast world and discover hidden riches!</p>
+                                <div class="event-meta">
+                                    <div class="meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19:00</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Unlimited Entry</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-coins"></i>
+                                        <span>$15,000 Prize</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-features">
+                                <span>Custom Map</span>
+                                <span>Clues</span>
+                                <span>Mystery Rewards</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="join-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-play"></i>
+                                    <span>JOIN NOW</span>
+                                </div>
+                            </button>
+                            <button class="details-btn">
+                                <div class="button-content">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>DETAILS</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div class="modal" id="eventDetailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2></h2>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="event-info-grid">
+                    <div class="info-section">
+                        <h3>
+                            <i class="fas fa-info-circle"></i>
+                            Event Information
+                        </h3>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Date</strong>
+                                    <span class="event-date-info"></span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Time</strong>
+                                    <span class="event-time-info"></span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>Participation</strong>
+                                    <span class="event-participants-info"></span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong>Prize</strong>
+                                    <span class="event-prize-info"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <h3>
+                            <i class="fas fa-scroll"></i>
+                            Rules
+                        </h3>
+                        <ul class="rules-list">
+                        </ul>
+                    </div>
+                    <div class="info-section">
+                        <h3>
+                            <i class="fas fa-trophy"></i>
+                            Prizes
+                        </h3>
+                        <ul class="prizes-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="img/logo.png" alt="Brezel Logo" class="footer-logo">
+                <p>© 2024 Eyes Store Services</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const eventSearch = document.getElementById('eventSearch');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const eventCards = document.querySelectorAll('.event-card');
+            const modal = document.getElementById('eventDetailsModal');
+            const modalClose = modal.querySelector('.modal-close');
+
+            const eventDetails = {
+                'tournament': {
+                    title: 'Grand Battle Tournament',
+                    rules: [
+                        'Must be a member of a clan to participate',
+                        'Each clan can enter with maximum 10 players',
+                        'PvP rules apply',
+                        'No hacks or exploits allowed',
+                        'Tournament duration: 2 hours'
+                    ],
+                    prizes: [
+                        '1st Clan: $50,000 + Exclusive Clan Tag',
+                        '2nd Clan: $25,000 + Special Armor Set',
+                        '3rd Clan: $10,000 + Unique Weapon Skin'
+                    ]
+                },
+                'community': {
+                    title: 'Master Builder Challenge',
+                    rules: [
+                        'Builds must be completely original',
+                        'Maximum build area: 100x100 blocks',
+                        'Creative mode allowed',
+                        'No WorldEdit usage',
+                        'Time limit: 3 hours'
+                    ],
+                    prizes: [
+                        '1st Place: $30,000 + Master Builder Badge',
+                        '2nd Place: $15,000 + Special Block Set',
+                        '3rd Place: $7,500 + Unique Hat'
+                    ]
+                },
+                'ingame': {
+                    title: 'Epic Treasure Hunt',
+                    rules: [
+                        'Solo participation only',
+                        'No team formation allowed',
+                        'PvP disabled',
+                        'No flying or teleporting',
+                        'Time limit: 1 hour'
+                    ],
+                    prizes: [
+                        '1st Place: $15,000 + Legendary Chest',
+                        '2nd Place: $7,500 + Rare Chest',
+                        '3rd Place: $3,750 + Common Chest'
+                    ]
+                }
+            };
+
+            function openModal(eventType) {
+                const details = eventDetails[eventType];
+                const modal = document.getElementById('eventDetailsModal');
+                
+                modal.querySelector('.modal-header h2').textContent = details.title;
+                
+                const rulesList = modal.querySelector('.rules-list');
+                rulesList.innerHTML = details.rules.map(rule => `<li>${rule}</li>`).join('');
+                
+                const prizesList = modal.querySelector('.prizes-list');
+                prizesList.innerHTML = details.prizes.map(prize => `<li>${prize}</li>`).join('');
+                
+                const card = document.querySelector(`[data-event-type="${eventType}"]`);
+                modal.querySelector('.event-date-info').textContent = `${card.querySelector('.event-date .day').textContent} ${card.querySelector('.event-date .month').textContent}`;
+                modal.querySelector('.event-time-info').textContent = card.querySelector('.meta-item:first-child span').textContent;
+                modal.querySelector('.event-participants-info').textContent = card.querySelector('.participant-count').textContent.trim();
+                modal.querySelector('.event-prize-info').textContent = card.querySelector('.meta-item:last-child span').textContent;
+
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+
+            document.querySelectorAll('.details-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const card = e.target.closest('.event-card');
+                    const eventType = card.dataset.eventType;
+                    openModal(eventType);
+                });
+            });
+
+            modalClose.addEventListener('click', () => {
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            function filterEvents() {
+                const searchTerm = eventSearch.value.toLowerCase();
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+                eventCards.forEach(card => {
+                    const title = card.querySelector('h2').textContent.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    const type = card.dataset.eventType;
+                    
+                    const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+                    const matchesFilter = activeFilter === 'all' || type === activeFilter;
+
+                    if (matchesSearch && matchesFilter) {
+                        card.style.display = 'flex';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    } else {
+                        card.style.display = 'none';
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                    }
+                });
+
+                const noResults = document.querySelector('.no-results');
+                const visibleCards = Array.from(eventCards).filter(card => card.style.display !== 'none');
+
+                if (visibleCards.length === 0) {
+                    if (!noResults) {
+                        const message = document.createElement('div');
+                        message.className = 'no-results';
+                        message.innerHTML = `
+                            <div class="no-results-content">
+                                <i class="fas fa-search"></i>
+                                <p>No results found</p>
+                                <span>Try different keywords or clear filters</span>
+                            </div>
+                        `;
+                        document.querySelector('.events-grid').appendChild(message);
+                    }
+                } else if (noResults) {
+                    noResults.remove();
+                }
+            }
+
+            eventSearch.addEventListener('input', () => {
+                filterEvents();
+            });
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    filterEvents();
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
